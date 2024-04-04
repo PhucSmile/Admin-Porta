@@ -1,0 +1,367 @@
+{
+  "message": {
+    "createSuccess": "Tạo thành công",
+    "updateSuccess": "Cập nhật thành công",
+    "uploadSuccess": "Tải lên thành công",
+    "exportSuccess": "Đã xuất thành công",
+    "deleteSuccess": "Xóa thành công",
+    "commonError": "Có lỗi xảy ra. Vui lòng thử lại",
+    "existEmailOrPhone": "Đã tồn tại email hoặc số điện thoại",
+    "confirmDelete": "Bạn có chắc muốn xóa không?",
+    "noteAdminSuccess": "Note thành công",
+    "error": {
+      "UNABLE_LOCATION": "Unable to retrieve your location.",
+      "NOT_SUPPORTED_LOCATION": "Geolocation is not supported by your browser."
+    },
+    "sendMessageSuccess": "Gửi SMS thành công"
+  },
+  "validate": {
+    "required": "Bắt buộc",
+    "invalidEmail": "Email không hợp lệ",
+    "invalidPhoneNumber": "Số điện thoại không hợp lệ",
+    "invalidFile": "Định dạng tập tin không hợp lệ",
+    "invalidPassword": "Phải có từ 6-24 ký tự"
+  },
+  "layout": {
+    "sider": {
+      "dashboard": "Bảng điều khiển",
+      "orders": "Đơn hàng",
+      "products": "Sản phẩm",
+      "customers": "Khách hàng",
+      "users": "Người sử dụng",
+      "logs": "Lịch sử",
+      "settings": "Cài đặt"
+    },
+    "notFound": {
+      "title": "404",
+      "desc": "Xin lỗi, trang bạn đã truy cập không tồn tại."
+    }
+  },
+  "common": {
+    "table": {
+      "no": "STT",
+      "status": "Trạng thái",
+      "total": "Tổng {total} mục",
+      "type": "Loại",
+      "time": "Thời gian",
+      "livestreamDate": "Ngày phát trực tiếp"
+    },
+    "btn": {
+      "addBankAccount": "Thêm tài khoản",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "addProduct": "Thêm sản phẩm",
+      "edit": "Chỉnh sửa",
+      "addNew": "Thêm mới",
+      "backHome": "Trở về trang chủ",
+      "delete": "Xóa",
+      "downloadExcel": "Xuất excel",
+      "downloadCsvTemplate": "Tải xuống mẫu csv",
+      "send": "Gửi",
+      "seeDetails": "Xem chi tiết",
+      "downloadPDF": "In PDF",
+      "downloadLable": "In Label",
+      "search": "Tìm kiếm",
+      "login": "Đăng nhập",
+      "reset": "Đặt lại",
+      "importCsv": "Nhập csv",
+      "apply": "Chọn",
+      "sendLink": "Gửi liên kết",
+      "logout": "Đăng xuất",
+      "shareLink": "Chia sẻ liên kết",
+      "resendSMS": "Gửi lại SMS"
+    },
+    "status": {
+      "order": {
+        "order": "Đặt hàng",
+        "packing": "Đang đóng gói",
+        "delivering": "Đang giao hàng",
+        "completed": "Đã hoàn thành",
+        "canceled": "Đã hủy",
+        "refunded": "Đã hoàn lại",
+        "pending": "Đang chờ xử lý",
+        "on_hold": "Đang chờ",
+        "failed": "Không thành công",
+        "pending_payment": "Chờ thanh toán"
+      },
+      "sms": {
+        "SUCCESS": "Thành công",
+        "FAIL": "Thất bại",
+        "null": "Chưa xác định"
+      },
+      "paymentStatus": {
+        "paid": "Đã thanh toán",
+        "pending": "Chưa thanh toán"
+      }
+    },
+    "field": {
+      "livestreamDate": "Ngày phát trực tiếp"
+    },
+    "placeholder": {
+      "searchOrder": "Tìm kiếm theo: Tên, điện thoại, địa chỉ ...",
+      "searNoteAdmin": "Tìm kiếm theo: Note admin ...",
+      "searchProduct": "Tìm kiếm theo: mã sản phẩm, tên sản phẩm ...",
+      "searchUser": "Tìm kiếm theo: ID người dùng, tên, email, điện thoại ...",
+      "searchCustomer": "Tìm kiếm theo: Tên, điện thoại, địa chỉ ...",
+      "orderStatus": "Trạng thái",
+      "orderPrice": "Giá",
+      "fromDate": "Chọn ngày",
+      "toDate": "Chọn ngày",
+      "role": "Tất cả chức vụ",
+      "smsStatus": "Trạng thái SMS"
+    },
+    "modal": {
+      "addNewTitle": "Thêm mới",
+      "editTitle": "Chỉnh sửa"
+    }
+  },
+  "views": {
+    "products": {
+      "form": {
+        "label": {
+          "code": "Mã sản phẩm",
+          "name": "Tên sản phẩm",
+          "price": "Giá",
+          "quantity": "Số lượng",
+          "heading": "Sản phẩm {index}"
+        },
+        "placeholder": {
+          "code": "Nhập mã sản phẩm",
+          "name": "Nhập tên sản phẩm",
+          "price": "Nhập giá",
+          "quantity": "Nhập số lượng"
+        }
+      },
+      "table": {
+        "code": "Mã sản phẩm",
+        "name": "Tên sản phẩm",
+        "price": "Giá",
+        "quantity": "Số lượng",
+        "livestreamDate": "Ngày Livestream"
+      },
+      "title": {
+        "orderInfo": "Thông tin đơn hàng",
+        "orderDetails": "Chi tiết đơn hàng"
+      }
+    },
+    "users": {
+      "form": {
+        "label": {
+          "fullName": "Tên người dùng",
+          "email": "Email",
+          "phone": "Số điện thoại",
+          "role": "Chức vụ",
+          "password": "Mật khẩu"
+        },
+        "placeholder": {
+          "fullName": "Nhập tên người dùng",
+          "email": "Nhập email",
+          "phone": "Nhập số điện thoại",
+          "role": "Chọn chức vụ",
+          "password": "Nhập mật khẩu"
+        }
+      },
+      "table": {
+        "id": "Mã",
+        "username": "Tên",
+        "email": "Email",
+        "phone": "Số điện thoại",
+        "role": "Chức vụ"
+      }
+    },
+    "orders": {
+      "table": {
+        "code": "Mã đơn hàng",
+        "confirmPayment": "Xác nhận thanh toán",
+        "confirm": "Xác nhận",
+        "true": "Đã xác nhận",
+        "deny": "Huỷ",
+        "fullName": "Họ tên",
+        "phone": "Số điện thoại",
+        "address": "Địa chỉ",
+        "productPrice": "Giá sản phẩm",
+        "smsStatus": "Trạng thái SMS",
+        "noteAdmin": "Note admin"
+      },
+      "form": {
+        "label": {
+          "status": "Trạng thái",
+          "livestreamDate": "Ngày phát trực tiếp",
+          "fullName": "Họ tên",
+          "email": "Email",
+          "phone": "Số điện thoại",
+          "provinceId": "Tỉnh/Thành",
+          "districtId": "Quận/Huyện",
+          "address": "Địa chỉ, đường, phường",
+          "note": "Ghi chú"
+        },
+        "placeholder": {
+          "status": "Chọn trạng thái",
+          "fullName": "Nhập họ tên",
+          "email": "Nhập email",
+          "phone": "Nhập số điện thoại",
+          "provinceId": "Chọn tỉnh/thành",
+          "districtId": "Chọn quận/huyện",
+          "address": "Nhập địa chỉ, đường, phường",
+          "note": "Nhập ghi chú"
+        }
+      },
+      "modal": {
+        "productCodeTitle": "Mã sản phẩm"
+      },
+      "orderInfo": {
+        "fullName": "Người nhận",
+        "phoneNumber": "Số điện thoại",
+        "address": "Địa chỉ",
+        "note": "Ghi chú",
+        "noteDescription": "Lưu ý: Để đảm bảo việc thanh toán được ghi nhận, khi chuyển khoản, vui lòng nhập đúng mã đơn hàng",
+        "code": "Mã đơn hàng",
+        "confirmPayment": "Trạng thái thanh toán",
+        "noteAdmin": "Note admin",
+        "totalPrice": "Tổng tiền"
+      },
+      "title": {
+        "detail": "Chi tiết"
+      }
+    },
+    "settings": {
+      "title": {
+        "noteTitle": "Ghi chú",
+        "paymentTitle": "Tài khoản ngân hàng"
+      },
+      "empty": "Không có tài khoản",
+      "form": {
+        "label": {
+          "bank": "Ngân hàng",
+          "accountNumber": "Số tài khoản",
+          "accountName": "Tên tài khoản",
+          "branchName": "Tên chi nhánh"
+        },
+        "placeholder": {
+          "bank": "Chọn ngân hàng",
+          "accountNumber": "Nhập số tài khoản",
+          "accountName": "Nhập tên tài khoản",
+          "branchName": "Nhập chi nhánh"
+        }
+      }
+    },
+    "auth": {
+      "login": {
+        "welcomeTitle": "Xin chào",
+        "form": {
+          "placeholder": {
+            "username": "Email / Số điện thoại",
+            "password": "Mật khẩu"
+          }
+        }
+      }
+    },
+    "logs": {
+      "table": {
+        "attachment": "Tập tin đính kèm",
+        "rowTotal": "Tổng số hàng",
+        "fileName": "Tên tệp",
+        "size": "Kích thước",
+        "mimetype": "Loại"
+      }
+    },
+    "dashboard": {
+      "year": "4 năm gần nhất",
+      "month": "4 tháng gần nhất",
+      "week": "4 tuần gần nhất",
+      "bestSellingItem": "Mặt hàng bán chạy nhất {index}",
+      "total": "Tổng",
+      "bestSellingOrderTitle": "Đơn hàng bán chạy nhất",
+      "revenueTitle": "Doanh thu",
+      "costPerResult": "Giá mỗi kết quả",
+      "form": {
+        "placeholder": {
+          "yearSaleRank": "Lọc theo năm"
+        }
+      },
+      "table": {
+        "productCode": "Mã sản phẩm",
+        "productName": "Tên sản phẩm",
+        "sales": "Doanh thu"
+      },
+      "title": {
+        "detail": "Chi tiết"
+      }
+    },
+    "customers": {
+      "table": {
+        "fullName": "Họ tên",
+        "phone": "Số điện thoại",
+        "address": "Địa chỉ"
+      },
+      "form": {
+        "label": {
+          "fullName": "Họ tên",
+          "phone": "Số điện thoại",
+          "email": "Email",
+          "provinceId": "Tỉnh/Thành",
+          "districtId": "Quận/Huyện",
+          "address": "Địa chỉ, đường, phường"
+        },
+        "placeholder": {
+          "fullName": "Nhập họ tên",
+          "phone": "Nhập số điện thoại",
+          "email": "Nhập email",
+          "provinceId": "Chọn tỉnh/thành",
+          "districtId": "Chọn quận/huyện",
+          "address": "Nhập địa chỉ, đường, phường"
+        }
+      }
+    },
+    "homepage": {
+      "orderNotExist": "Đơn hàng không tồn tại",
+      "orderCode": "Mã đơn hàng",
+      "orderLookupTitle": "Tra cứu đơn hàng"
+    },
+    "profile": {
+      "numberPhoneNotExist": "Số điện thoại này không tồn tại",
+      "numberPhoneCode": "Số điện thoại",
+      "numberPhoneLookupTitle": "Tra cứu số điện thoại",
+      "userNumberPhone": "Họ và tên",
+      "searchNumberPhoneSuccess": "Tìm số điện thoại thành công"
+    }
+  },
+  "components": {
+    "bank": {
+      "name": "Tên ngân hàng",
+      "accountOwner": "Chủ tài khoản",
+      "accountNumber": "Số tài khoản",
+      "branch": "Chi nhánh"
+    },
+    "product": {
+      "description": "Tên",
+      "quantity": "Số lượng",
+      "price": "Giá",
+      "total": "Tổng",
+      "totalPrice": "Tổng"
+    },
+    "import": {
+      "modalTitle": "Nhập",
+      "desc": "Nhấp hoặc kéo tệp vào khu vực này để tải lên"
+    },
+    "sendSMS": {
+      "modalTitle": "Thông tin gửi SMS",
+      "form": {
+        "label": {
+          "phone": "Số điện thoại",
+          "message": "Tin nhắn"
+        },
+        "placeholder": {
+          "phone": "Nhập số điện thoại",
+          "message": "Nhập tin nhắn"
+        },
+        "initialValues": {
+          "message": "NAMDUNG chot don {code}. Chi tiet {publicLink}. Ban vui long thanh toan trong 72h. sau 72h, don hang tu huy."
+        }
+      },
+      "popconfirm": {
+        "title": "Xác nhận gửi lại SMS"
+      }
+    }
+  }
+}

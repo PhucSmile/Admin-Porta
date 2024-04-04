@@ -1,0 +1,369 @@
+{
+  "message": {
+    "createSuccess": "Created successfully",
+    "updateSuccess": "Updated successfully",
+    "uploadSuccess": "Uploaded successfully",
+    "exportSuccess": "Exported successfully",
+    "deleteSuccess": "Deleted successfully",
+    "commonError": "An error occurred, please try again",
+    "existEmailOrPhone": "Already exists email or phone number",
+    "confirmDelete": "Are you sure to delete?",
+    "noteAdminSuccess": "Note successfully",
+    "error": {
+      "UNABLE_LOCATION": "Unable to retrieve your location.",
+      "NOT_SUPPORTED_LOCATION": "Geolocation is not supported by your browser."
+    },
+    "sendMessageSuccess": "Sent SMS successfully"
+  },
+  "validate": {
+    "required": "Required",
+    "invalidEmail": "Invalid email",
+    "invalidPhoneNumber": "Invalid phone number",
+    "invalidFile": "Invalid file format",
+    "invalidPassword": "Must be between 6-24 characters"
+  },
+  "layout": {
+    "sider": {
+      "dashboard": "Dashboard",
+      "orders": "Order",
+      "products": "Product",
+      "customers": "Customer",
+      "users": "User",
+      "logs": "Logs",
+      "settings": "Setting"
+    },
+    "notFound": {
+      "title": "404",
+      "desc": "Sorry, the page you visited does not exist."
+    }
+  },
+  "common": {
+    "table": {
+      "no": "No",
+      "status": "Status",
+      "total": "Total {total} items",
+      "type": "Type",
+      "time": "Time",
+      "livestreamDate": "Livestream date"
+    },
+    "btn": {
+      "addBankAccount": "Add account",
+      "save": "Save",
+      "cancel": "Cancel",
+      "addProduct": "Add product",
+      "edit": "Edit",
+      "addNew": "Add new",
+      "backHome": "Back to home",
+      "delete": "Delete",
+      "downloadExcel": "Download excel",
+      "downloadCsvTemplate": "Download csv template",
+      "send": "Send",
+      "seeDetails": "See details",
+      "downloadPDF": "Download pdf",
+      "downloadLable": "Download Label",
+      "search": "Search",
+      "login": "Log in",
+      "reset": "Reset",
+      "importCsv": "Import csv",
+      "apply": "Apply",
+      "sendLink": "Send link",
+      "logout": "Logout",
+      "shareLink": "Share link",
+      "resendSMS": "Resend SMS"
+    },
+    "status": {
+      "order": {
+        "order": "Order",
+        "packing": "Packing",
+        "delivering": "Delivering",
+        "completed": "Completed",
+        "canceled": "Canceled",
+        "refunded": "Refunded",
+        "pending": "Pending",
+        "on_hold": "On hold",
+        "failed": "Failed",
+        "pending_payment": "Pending payment"
+      },
+      "sms": {
+        "SUCCESS": "Success",
+        "FAIL": "Fail",
+        "null": "Unknown"
+      },
+      "paymentStatus": {
+        "paid": "Paid",
+        "pending": "Pending"
+      }
+    },
+    "field": {
+      "livestreamDate": "Livestream date"
+    },
+    "placeholder": {
+      "searchOrder": "Search by: name, phone, address...",
+      "searNoteAdmin": "Search by: Note admin ...",
+      "searchProduct": "Search by: product code, product name...",
+      "searchUser": "Search by: User ID, name, email, phone...",
+      "searchCustomer": "Search by: Name, phone, address...",
+      "orderStatus": "Status",
+      "orderPrice": "Order price",
+      "fromDate": "Select date",
+      "toDate": "Select date",
+      "role": "All roles",
+      "smsStatus": "SMS status"
+    },
+    "modal": {
+      "addNewTitle": "Add new",
+      "editTitle": "Edit"
+    }
+  },
+  "views": {
+    "products": {
+      "form": {
+        "label": {
+          "code": "Product code",
+          "name": "Product name",
+          "price": "Product price",
+          "quantity": "Product quantity",
+          "heading": "Product {index}"
+        },
+        "placeholder": {
+          "code": "Enter product code",
+          "name": "Enter product name",
+          "price": "Enter product price",
+          "quantity": "Enter product quantity"
+        }
+      },
+      "table": {
+        "code": "Product code",
+        "name": "Product name",
+        "price": "Product price",
+        "quantity": "Product quantity",
+        "livestreamDate": "Livestream Date"
+      },
+      "title": {
+        "orderInfo": "Order information",
+        "orderDetails": "Order details"
+      }
+    },
+    "users": {
+      "form": {
+        "label": {
+          "fullName": "User name",
+          "email": "User email",
+          "phone": "User phone",
+          "role": "Role",
+          "password": "Password"
+        },
+        "placeholder": {
+          "fullName": "Enter full name",
+          "email": "Enter email",
+          "phone": "Enter phone",
+          "role": "Select role",
+          "password": "Enter password"
+        }
+      },
+      "table": {
+        "id": "User ID",
+        "username": "Username",
+        "email": "User email",
+        "phone": "User phone",
+        "role": "Role"
+      }
+    },
+    "orders": {
+      "table": {
+        "code": "Order code",
+        "confirmPayment": "Confirm payment",
+        "confirm": "Confirm",
+        "true": "True",
+        "deny": "Deny",
+        "fullName": "Full name",
+        "phone": "Phone",
+        "address": "Address",
+        "productPrice": "Product price",
+        "smsStatus": "SMS status",
+        "noteAdmin": "Note admin"
+      },
+      "form": {
+        "label": {
+          "status": "Status",
+          "livestreamDate": "Livestream date",
+          "fullName": "Full name",
+          "email": "Email",
+          "phone": "Phone",
+          "provinceId": "Province",
+          "districtId": "District",
+          "address": "Address number, street, ward",
+          "note": "Note"
+        },
+        "placeholder": {
+          "status": "Select status",
+          "fullName": "Enter full name",
+          "email": "Enter email",
+          "phone": "Enter phone",
+          "provinceId": "Select province",
+          "districtId": "Select district",
+          "address": "Enter address number, street, ward",
+          "note": "Enter note"
+        }
+      },
+      "modal": {
+        "productCodeTitle": "Product code"
+      },
+      "orderInfo": {
+        "fullName": "Receiver",
+        "phoneNumber": "Receiver's phone number",
+        "address": "Receiver's address",
+        "note": "Note",
+        "noteDescription": "Note: To ensure payment is recorded, when transferring, please enter the correct order code",
+        "code": "Order code",
+        "confirmPayment": "Payment Status",
+        "noteAdmin": "Note admin",
+        "totalPrice": "Total price"
+
+
+      },
+      "title": {
+        "detail": "Detail"
+      }
+    },
+    "settings": {
+      "title": {
+        "noteTitle": "Note",
+        "paymentTitle": "Bank account"
+      },
+      "empty": "Do not have an account",
+      "form": {
+        "label": {
+          "bank": "Bank",
+          "accountNumber": "Account number",
+          "accountName": "Account name",
+          "branchName": "Branch name"
+        },
+        "placeholder": {
+          "bank": "Select bank",
+          "accountNumber": "Enter account number",
+          "accountName": "Enter account name",
+          "branchName": "Enter branch name"
+        }
+      }
+    },
+    "auth": {
+      "login": {
+        "welcomeTitle": "Welcome",
+        "form": {
+          "placeholder": {
+            "username": "Email / Phone",
+            "password": "Password"
+          }
+        }
+      }
+    },
+    "logs": {
+      "table": {
+        "attachment": "Attachment",
+        "rowTotal": "Row total",
+        "fileName": "File name",
+        "size": "Size",
+        "mimetype": "Mimetype"
+      }
+    },
+    "dashboard": {
+      "year": "4 years nearest",
+      "month": "4 months nearest",
+      "week": "4 weeks nearest",
+      "bestSellingItem": "Best selling item {index}",
+      "total": "Total",
+      "bestSellingOrderTitle": "Best selling order",
+      "revenueTitle": "Revenue",
+      "costPerResult": "Cost per result",
+      "form": {
+        "placeholder": {
+          "yearSaleRank": "Filter by year"
+        }
+      },
+      "table": {
+        "productCode": "Product code",
+        "productName": "Product name",
+        "sales": "Sales"
+      },
+      "title": {
+        "detail": "Detail"
+      }
+    },
+    "customers": {
+      "table": {
+        "fullName": "Full name",
+        "phone": "Phone",
+        "address": "Address"
+      },
+      "form": {
+        "label": {
+          "fullName": "Full name",
+          "phone": "Phone",
+          "email": "Email",
+          "provinceId": "Province",
+          "districtId": "District",
+          "address": "Address number, street, ward"
+        },
+        "placeholder": {
+          "fullName": "Enter full name",
+          "phone": "Enter phone",
+          "email": "Enter email",
+          "provinceId": "Select province",
+          "districtId": "Select district",
+          "address": "Enter address number, street, ward"
+        }
+      }
+    },
+    "homepage": {
+      "orderNotExist": "Order does not exist",
+      "orderCode": "Order code",
+      "orderLookupTitle": "Order lookup"
+    },
+    "profile": {
+      "numberPhoneNotExist": "Number phone does not exist",
+      "numberPhoneCode": "Number phone code",
+      "numberPhoneLookupTitle": "Number phone lookup",
+      "userNumberPhone": "fullName",
+      "searchNumberPhoneSuccess": "Lookup number phone success"
+    }
+  },
+  "components": {
+    "bank": {
+      "name": "Name",
+      "accountOwner": "Account owner",
+      "accountNumber": "Account number",
+      "branch": "Branch"
+    },
+    "product": {
+      "description": "Description",
+      "quantity": "Quantity",
+      "price": "Price",
+      "total": "Total",
+      "totalPrice": "Total"
+    },
+    "import": {
+      "modalTitle": "Import",
+      "desc": "Click or drag file to this area to upload"
+    },
+    "sendSMS": {
+      "modalTitle": "SMS sending information",
+      "form": {
+        "label": {
+          "phone": "Phone",
+          "message": "Message"
+        },
+        "placeholder": {
+          "phone": "Enter phone",
+          "message": "Enter message"
+        },
+        "initialValues": {
+          "message": "Order code {code}. For detailed information and order status, please see {publicLink}"
+        }
+      },
+      "popconfirm": {
+        "title": "Confirm resend SMS"
+      }
+    }
+  }
+}

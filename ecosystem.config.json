@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "web-portal-fe",
+      "script": "./server.js",
+      "autorestart": true,
+      "watch": false,
+      "env": {
+        "PORT": 8056
+      }
+    }
+  ]
+}

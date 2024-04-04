@@ -1,0 +1,83 @@
+image: node:16.15.1
+
+stages:
+  - build
+  - deploy
+
+
+build_staging:
+  stage: build
+  script:
+    - npm rebuild node-sass
+    - yarn install
+    - yarn build:stg
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+      - server.js
+      - package.json
+      - ecosystem.config.json
+  only:
+    - staging
+
+build_product:
+  stage: build
+  script:
+    - npm rebuild node-sass
+    - yarn install
+    - yarn build:prod
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+      - server.js
+      - package.json
+      - ecosystem.config.json
+  only:
+    - master
+
+deploy_staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: https://vudai.dev.pixa.asia
+
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client rsync yarn -y )'
+    - 'which rsync || ( apt-get update -y && apt-get install rsync -y )'
+    - 'which yarn || ( apt-get update -y && apt-get install yarn -y )'
+    - eval $(ssh-agent -s)
+    - echo "${STAGING_SSH_PRIVATE_KEY}" | ssh-add -
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - rsync -ravz --delete build $STAGING_SSH_USER@$STAGING_SSH_HOST:$STAGING_PROJECT_DIR
+    - rsync -avz --delete server.js package.json ecosystem.config.json $STAGING_SSH_USER@$STAGING_SSH_HOST:$STAGING_PROJECT_DIR
+    - ssh -t $STAGING_SSH_USER@$STAGING_SSH_HOST 'cd '$STAGING_PROJECT_DIR' && yarn install && pm2 startOrRestart ecosystem.config.json --env staging'
+  only:
+    - staging
+
+deploy_production:
+  stage: deploy
+  environment:
+    name: production
+    url: https://portal.vudaishop.vn
+
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y -qq ssh
+    - apt-get install -y -qq rsync
+    - apt-get install -y -qq sshpass
+    - mkdir ~/.ssh
+    - echo "StrictHostKeyChecking no" >> ~/.ssh/config
+    - export SSHPASS=$USER_PWD
+  script:
+    - sshpass -e rsync -ravz --delete build $USER@$HOST:$PROJECT_DIR
+    - sshpass -e rsync -avz --delete server.js package.json ecosystem.config.json $USER@$HOST:$PROJECT_DIR
+    - sshpass -e ssh -t $USER@$HOST 'cd '$PROJECT_DIR' && yarn install && pm2 startOrRestart ecosystem.config.json --env production'
+  only:
+    - master
+
+
+
